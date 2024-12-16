@@ -30,6 +30,32 @@ username  ALL=(ALL:ALL) ALL
 
 replace 'username' with user you create
 
+## Configure SSH Key Pairs(can do with root and other users)
+
+If user doesn't have ssh key pair, make directory first
+
+```ssh
+mkdir ~/.ssh
+```
+
+```shell
+touch ~/.ssh/authorized_keys
+```
+
+```shell
+nano ~/.ssh/authorized_keys
+```
+
+Then add the public part of ssh key pairs into authorized_keys and save. Next time can use private part of designated key pairs to login ssh.
+
+## (Optional) Generate Key Pairs
+
+In client ssh (window can use powershell or cmd)
+
+```shell
+ssh-keygen -t RSA -b 4096 -f "/PATH/TO/FILENAME"
+```
+
 ## Add apt repository
 
 ```shell
