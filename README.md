@@ -91,3 +91,8 @@ sudo apt update
 
 [MySQL installation and configuration](./MySQL_Installation.md)
 
+### Archive Version JDK(applies to other software as well)
+
+through adding third party apt repository
+
+[Archive Version JDK](./Archive versions JDK configuration.md)
