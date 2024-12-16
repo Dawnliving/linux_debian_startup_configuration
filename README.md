@@ -59,5 +59,5 @@ sudo apt update
 
 ### MySQL
 
-
+[MySQL installation and configuration](./MySQL_Installation.md)
 
