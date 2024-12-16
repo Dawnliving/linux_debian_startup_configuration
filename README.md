@@ -95,4 +95,4 @@ sudo apt update
 
 through adding third party apt repository
 
-[Archive Version JDK](./Archive versions JDK configuration.md)
+[Archive Version JDK](./Archive_versions_JDK_configuration.md)
