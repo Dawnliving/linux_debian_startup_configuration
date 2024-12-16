@@ -56,6 +56,10 @@ In client ssh (window can use powershell or cmd)
 ssh-keygen -t RSA -b 4096 -f "/PATH/TO/FILENAME"
 ```
 
+Notice:
+
+id_rsa is the defalt file name generated, and lots of software can automatically use id_rsa keypair to connect ssh, so if keypairs are used to reduce frequency of entering password, please keep keypair filename as default or "id_rsa"
+
 ## Add apt repository
 
 ```shell
