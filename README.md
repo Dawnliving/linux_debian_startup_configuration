@@ -55,3 +55,9 @@ deb-src https://deb.debian.org/debian bookworm-updates main non-free-firmware no
 sudo apt update
 ```
 
+## Other basic software installation
+
+### MySQL
+
+
+
