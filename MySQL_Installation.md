@@ -56,5 +56,15 @@ please change 'password' as you want
 create user 'debian'@'%' identified by "password";
 ```
 
+grant privileges to new user, in this case, grant all privileges, you can grant different privileges to different users based on your needs.
 
+```sql
+grant all privileges on *.* to 'debian'@'%';
+```
+
+refresh privilege, without restart mysql service
+
+```sql
+flush privileges;
+```
 
