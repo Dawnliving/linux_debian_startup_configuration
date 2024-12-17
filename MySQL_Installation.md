@@ -104,4 +104,4 @@ alter user 'root'@'localhost' identified with caching_sha2_password by 'yourpass
 flush privileges;
 ```
 
-Then go to [obtain remote access](# Configure MySQL)
+Then go to [obtain remote access](#configure-mysql)
