@@ -86,7 +86,7 @@ sudo cat /etc/mysql/debian.cnf
 
 ### Example debian.cnf
 
-![image-20241217084352853](./img/image-20241217084352853.png)
+![image-20241217084352853](img/image-20241217084352853.png)
 
 Use the user to login, it has all privileges.
 
