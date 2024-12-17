@@ -30,6 +30,20 @@ username  ALL=(ALL:ALL) ALL
 
 replace 'username' with user you create
 
+## (Optional) Generate Key Pairs
+
+In client ssh (window can use powershell or cmd)
+
+```shell
+ssh-keygen -t RSA -b 4096 -P '' -f "/PATH/TO/FILENAME"
+```
+
+It will generate a keypairs, default file name are id_rsa and id_rsa.pub.
+
+Notice:
+
+id_rsa is the defalt file name generated, and lots of software can automatically use id_rsa keypair to connect ssh, so if keypairs are used to reduce frequency of entering password, please keep keypair filename as default or "id_rsa". For example, hadoop, git access github.com via ssh.
+
 ## Configure SSH Key Pairs(can do with root and other users)
 
 If user doesn't have ssh key pair, make directory first
@@ -46,19 +60,9 @@ touch ~/.ssh/authorized_keys
 nano ~/.ssh/authorized_keys
 ```
 
-Then add the public part of ssh key pairs into authorized_keys and save. Next time can use private part of designated key pairs to login ssh.
+Then add the public part of ssh key pairs (id_rsa.pub) into authorized_keys and save. Next time can use private part of designated key pairs (id_rsa) to login ssh. 
 
-## (Optional) Generate Key Pairs
-
-In client ssh (window can use powershell or cmd)
-
-```shell
-ssh-keygen -t RSA -b 4096 -f "/PATH/TO/FILENAME"
-```
-
-Notice:
-
-id_rsa is the defalt file name generated, and lots of software can automatically use id_rsa keypair to connect ssh, so if keypairs are used to reduce frequency of entering password, please keep keypair filename as default or "id_rsa"
+To distinguish different protocol,  if use **openssh** protocol to access ssh, keypair private file will have no suffix or .pem .key suffix, if use putty protocol to access ssh, keypair private file will have .ppk suffix.
 
 ## Add apt repository
 
