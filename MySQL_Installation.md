@@ -78,7 +78,7 @@ Hence, Ubuntu need additional configuration.
 
 To get the default user and password generate by MySQL
 
-[Reference]([MySQL :: MySQL 8.4 Reference Manual :: 6.2.2.2 Using Option Files](https://dev.mysql.com/doc/refman/8.4/en/option-files.html))
+[Reference](https://dev.mysql.com/doc/refman/8.4/en/option-files.html)
 
 ```shell
 sudo cat /etc/mysql/debian.cnf
@@ -96,11 +96,11 @@ MySQL 8.0 provide new encryption method caching_sha2_password to improve passwor
 
 can choose sha256_password, mysql_native_password as well. 
 
-[Reference]([MySQL :: MySQL 8.0 Reference Manual :: 8.4.1.3 SHA-256 Pluggable Authentication](https://dev.mysql.com/doc/refman/8.0/en/sha256-pluggable-authentication.html))
+[Reference](https://dev.mysql.com/doc/refman/8.0/en/sha256-pluggable-authentication.html)
 
 ```sql
 use mysql;
-alter user 'root'@'localhost' identified with caching_sha2_password by 'yourpassword';
+alter user 'debian_sys_maint'@'localhost' identified with caching_sha2_password by 'yourpassword';
 flush privileges;
 ```
 
